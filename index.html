@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="./validate.js" defer></script>
   </head>
   <body>
     <header>
@@ -40,22 +41,28 @@
       <form action="" method="post">
         <label class="form-text" for="email">
           Email address
-          <input type="email" name="email" id="" required />
+          <input type="email" name="email" id="form-email" required />
         </label>
         <label class="form-text" for="tel">
           Phone (recommended)
-          <input type="tel" name="tel" id="" />
+          <input type="tel" name="tel" id="form-phone" />
           <span class="tiny-text"
             >Standard call, message, or data rates may apply.</span
           >
         </label>
         <label class="form-text" for="zip">
           Zip code
-          <input type="number" name="zip" id="" placeholder="16412" required />
+          <input
+            type="number"
+            name="zip"
+            id="form-zip"
+            placeholder="16412"
+            required
+          />
         </label>
         <label class="form-text" for="pass">
           Password
-          <input type="password" name="pass" id="" required />
+          <input type="password" name="pass" id="form-password" required />
         </label>
         <button class="btn register-button" type="submit">
           <span class="lock-icon"></span> Create Account
