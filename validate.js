@@ -1,9 +1,13 @@
 const userUnselectedForm = (e) => {
   console.log(e.target);
+  //if field empty or not filled out correctly
   if (e.target.value == '') {
-    alert('please enter a value');
+    console.log('please enter a value');
+    e.target.classList.add('validation-error');
   }
-  console.log('bangg');
+  if (e.target.value !== '') {
+    e.target.classList.remove('validation-error');
+  }
 };
 
 const emailEl = document.getElementById('form-email');
